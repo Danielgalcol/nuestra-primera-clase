@@ -40,4 +40,28 @@ public class EstacionDeTren{
         }
         return estacionAbierta;
     }
+    
+    public void imprimirDetalles(){
+        String castellano = "";
+        if(estacionAbierta == true){
+            castellano = "Si.";
+        }
+        else if (estacionAbierta == false){
+            castellano = "No.";
+        }
+        System.out.println("Nombre estacion: " + estacionDeTren + "|" + " Numero trenes pasan: " + ntrenesQueParan + "|" + " Estacion abierta? " + castellano);
+    }
+    
+    public String getDetalles(){
+        String castellano = "";
+        String detalles = "";
+        if(estacionAbierta == true){
+            castellano = "Si.";
+        }
+        else if (estacionAbierta == false){
+            castellano = "No.";
+        }
+        detalles = "Nombre estacion: " + estacionDeTren + "|" + " Numero trenes pasan: " + ntrenesQueParan + "|" +" Estacion abierta? " + castellano;
+        return detalles;
+    }
 }
