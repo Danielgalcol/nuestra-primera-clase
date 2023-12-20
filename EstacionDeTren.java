@@ -21,24 +21,24 @@ public class EstacionDeTren{
         return estacionAbierta;
     }
     
-    public String setNombreDeLaEstacion(String cambioNombre){
+    public void setNombreDeLaEstacion(String cambioNombre){
         estacionDeTren = cambioNombre;
-        return estacionDeTren;
+        
     }
     
-    public int setNTrenesQueParan(int masTrenes){
+    public void setNTrenesQueParan(int masTrenes){
         ntrenesQueParan = ntrenesQueParan + masTrenes;
-        return ntrenesQueParan;
+        
     }
     
-    public boolean setEstacionAbierta(){
+    public void setEstacionAbierta(){
         if(estacionAbierta == true){
             estacionAbierta = false;
         }
         else if (estacionAbierta == false){
             estacionAbierta = true;
         }
-        return estacionAbierta;
+        
     }
     
     public void imprimirDetalles(){
